@@ -21,12 +21,13 @@ const movies = [
     },
   ];
 
-/*
-Dado el siguiente código usa **forof** para recorrer el array de películas, genera un nuevo array con las categorías de las películas e imprime por consola el array de categorías.
+  const categories = [];
+  for (const movie of movies) {
+    for (const category of movie.categories) {
+        if (!categories.includes(category)) {
+            categories.push(category);
+        }
+    }
+  }
 
-Ten en cuenta que las categorías **no tienen que repetirse**.
-
-Es decir, **const categorias = ["comedia", "aventura", "acción", "thriller", "animación"]**
-
-Para filtrar las categorías puedes ayudarte de la función **.includes()**.
-*/
+  console.log(categories)
