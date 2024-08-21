@@ -5,10 +5,11 @@ const fantasticFour = [
     "La cosa",
   ];
 
-/*
-Crea una función llamada **swap** que reciba un array y dos parametros que sean indices del array.
-
-La función deberá intercambiar la posición de los valores de los indices que hayamos enviado como parametro. Es decir, intercambiar el lugar de un elemento por otro dentro del array.
-
-Retorna el array resultante.
-*/
+  function swap(list, param1, param2) {
+    const change = list[param1];
+    list[param1] = list[param2];
+    list[param2] = change;
+  return list;
+  }
+  
+  console.log(swap(fantasticFour, 1, 2));

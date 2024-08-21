@@ -33,6 +33,20 @@ const users = [
     },
   ];
 
+  const MediaVolume = []
+
+  for (const user of users) {
+    MediaVolume.push(user.name)
+    for (const sound in user.volume) {
+      const TotalVolume = user.volume++
+      MediaVolume.push(user.sound/TotalVolume);
+    //}
+  }
+  }
+
+  console.log(MediaVolume);
+  console.log(TotalVolume);
+
 /*
 Dado el siguiente código usa **forof** y **forin** para hacer la media del volumen de todos los sonidos favoritos que tienen los usuarios.
 
