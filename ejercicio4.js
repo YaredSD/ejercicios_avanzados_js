@@ -8,8 +8,15 @@ const mainCharacters = [
   "Obi-Wan",
 ];
 
+// Ejercicio 4.1
+
 function findArrayIndex(array, text) {
-  //Tu codigo
+  
+}
+
+// Ejercicio 4.2
+function removeItem(array,text) {
+  
 }
 
 /*
